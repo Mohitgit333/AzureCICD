@@ -155,3 +155,4 @@ D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\test\MyTests\
 D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\test\MyTests\obj\Debug\net10.0\MyTests.pdb
 D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\test\MyTests\obj\Debug\net10.0\MyTests.genruntimeconfig.cache
 D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\test\MyTests\obj\Debug\net10.0\ref\MyTests.dll
+D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\test\MyTests\obj\Debug\net10.0\MyTests.sourcelink.json
