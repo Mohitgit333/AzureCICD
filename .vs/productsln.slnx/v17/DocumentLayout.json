@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Sandeep sir Azure Night Batch\\Azure Sample Projects\\ProductCICD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE867C6C-CEDE-ECCD-C92F-36AFF25C6BDF}|src\\productservice\\productservice.csproj|d:\\sandeep sir azure night batch\\azure sample projects\\productcicd\\src\\productservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE867C6C-CEDE-ECCD-C92F-36AFF25C6BDF}|src\\productservice\\productservice.csproj|solutionrelative:src\\productservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE867C6C-CEDE-ECCD-C92F-36AFF25C6BDF}|src\\productservice\\productservice.csproj|d:\\sandeep sir azure night batch\\azure sample projects\\productcicd\\src\\productservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE867C6C-CEDE-ECCD-C92F-36AFF25C6BDF}|src\\productservice\\productservice.csproj|solutionrelative:src\\productservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE867C6C-CEDE-ECCD-C92F-36AFF25C6BDF}|src\\productservice\\productservice.csproj|d:\\sandeep sir azure night batch\\azure sample projects\\productcicd\\src\\productservice\\productservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{AE867C6C-CEDE-ECCD-C92F-36AFF25C6BDF}|src\\productservice\\productservice.csproj|solutionrelative:src\\productservice\\productservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE867C6C-CEDE-ECCD-C92F-36AFF25C6BDF}|src\\productservice\\productservice.csproj|d:\\sandeep sir azure night batch\\azure sample projects\\productcicd\\src\\productservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE867C6C-CEDE-ECCD-C92F-36AFF25C6BDF}|src\\productservice\\productservice.csproj|solutionrelative:src\\productservice\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE867C6C-CEDE-ECCD-C92F-36AFF25C6BDF}|src\\productservice\\productservice.csproj|d:\\sandeep sir azure night batch\\azure sample projects\\productcicd\\src\\productservice\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,33 +46,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Sandeep sir Azure Night Batch\\Azure Sample Projects\\ProductCICD\\src\\productservice\\appsettings.json",
               "RelativeDocumentMoniker": "src\\productservice\\appsettings.json",
               "ToolTip": "D:\\Sandeep sir Azure Night Batch\\Azure Sample Projects\\ProductCICD\\src\\productservice\\appsettings.json",
               "RelativeToolTip": "src\\productservice\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-09-08T18:39:05.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Sandeep sir Azure Night Batch\\Azure Sample Projects\\ProductCICD\\src\\productservice\\Program.cs",
               "RelativeDocumentMoniker": "src\\productservice\\Program.cs",
               "ToolTip": "D:\\Sandeep sir Azure Night Batch\\Azure Sample Projects\\ProductCICD\\src\\productservice\\Program.cs",
               "RelativeToolTip": "src\\productservice\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAADAAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-05T16:47:55.531Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "productservice.csproj",
               "DocumentMoniker": "D:\\Sandeep sir Azure Night Batch\\Azure Sample Projects\\ProductCICD\\src\\productservice\\productservice.csproj",
               "RelativeDocumentMoniker": "src\\productservice\\productservice.csproj",
@@ -84,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\Sandeep sir Azure Night Batch\\Azure Sample Projects\\ProductCICD\\src\\productservice\\controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "src\\productservice\\controllers\\ProductController.cs",
@@ -92,7 +92,8 @@
               "RelativeToolTip": "src\\productservice\\controllers\\ProductController.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T14:28:33.059Z"
+              "WhenOpened": "2026-09-04T14:28:33.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

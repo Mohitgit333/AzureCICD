@@ -9,11 +9,14 @@ builder.Services.AddCors(options =>
     options.AddPolicy("ReactPolicy",
         policy =>
         {
-            policy.WithOrigins(builder.Configuration["CorsSettings:AllowedOrigins"])
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
+            policy.WithOrigins(
+                builder.Configuration.GetSection("CorsSettings:AllowedOrigins").Get<string[]>()
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod();
         });
 });
+
 
 // Azure Key Vault
 builder.Configuration.AddAzureKeyVault(
