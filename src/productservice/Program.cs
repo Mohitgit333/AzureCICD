@@ -6,11 +6,13 @@ using System;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(p =>
-    {
-        var front_end = builder.Configuration.GetValue<string>("frontend_url");
-        p.WithOrigins(front_end).AllowAnyMethod().AllowAnyHeader();
-    });
+    options.AddPolicy("ReactPolicy",
+        policy =>
+        {
+            policy.WithOrigins(builder.Configuration["CorsSettings:AllowedOrigins"])
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
 });
 
 // Azure Key Vault
@@ -41,7 +43,7 @@ var app = builder.Build();
 // Swagger
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseCors();
+app.UseCors("ReactPolicy");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
