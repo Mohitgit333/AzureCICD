@@ -35,22 +35,22 @@ namespace productservice.Controllers
         // }
 
         // DELETE: api/product/1
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
-            {
-                var product =
-                    await _context.Products.FindAsync(id);
+        // [HttpDelete("{id}")]
+        // public async Task<IActionResult> Delete(int id)
+        //     {
+        //         var product =
+        //             await _context.Products.FindAsync(id);
 
-                if (product == null)
-                {
-                    return NotFound();
-                }
+        //         if (product == null)
+        //         {
+        //             return NotFound();
+        //         }
 
-                _context.Products.Remove(product);
+        //         _context.Products.Remove(product);
 
-                await _context.SaveChangesAsync();
+        //         await _context.SaveChangesAsync();
 
-                return Ok("Product Deleted Successfully");
-            }
+        //         return Ok("Product Deleted Successfully");
+        //     }
           }
         }
