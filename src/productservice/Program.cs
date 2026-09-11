@@ -6,15 +6,10 @@ using System;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("ReactPolicy",
-        policy =>
-        {
-            policy.WithOrigins(
-                builder.Configuration.GetSection("CorsSettings:AllowedOrigins").Get<string[]>()
-            )
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-        });
+    options.AddPolicy("AllowReactApp",
+        policy => policy.WithOrigins("https://mukeshwebapp1111-gbepgtdpf4cydnfw.centralindia-01.azurewebsites.net")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod());
 });
 
 
