@@ -57,7 +57,7 @@ public IActionResult GetAll()
 
 public IActionResult GetCurrentTime()
         {
-            return Ok(DateTime.Now.ToShortDateString() +"mydate");
+            return Ok(DateTime.Now.ToShortDateString() +"my Short date");
         }
 
         //  // POST: api/product
