@@ -9,23 +9,49 @@ namespace productservice.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        // private readonly AppDbContext _context;
 
-        public ProductController(AppDbContext context)
-        {
-            _context = context;
-        }
+        // public ProductController(AppDbContext context)
+        // {
+        //     _context = context;
+        // }
 
         // GET: api/product
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
+       [HttpGet]
+public IActionResult GetAll()
+{
+    var products = new List<Product>
+    {
+        new Product
         {
-            var products = await _context.Products.ToListAsync();
-
-            return Ok(products);
+            Id = 1,
+            Name = "Laptop",
+            Price = 55000
+        },
+        new Product
+        {
+            Id = 2,
+            Name = "Mobile",
+            Price = 25000
+        },
+        new Product
+        {
+            Id = 3,
+            Name = "Tablet",
+            Price = 18000
+        },
+        new Product
+        {
+            Id = 4,
+            Name = "Headphones",
+            Price = 3000
         }
+    };
 
-         // POST: api/product
+    return Ok(products);
+}
+
+        //  // POST: api/product
         // [HttpPost]
         // public async Task<IActionResult> Create(Product product)
         // {
@@ -34,7 +60,7 @@ namespace productservice.Controllers
         //     return Ok(result);
         // }
 
-        // DELETE: api/product/1
+        // // DELETE: api/product/1
         // [HttpDelete("{id}")]
         // public async Task<IActionResult> Delete(int id)
         //     {
