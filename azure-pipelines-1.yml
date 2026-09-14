@@ -1,0 +1,93 @@
+trigger:
+- main
+
+pool:
+  name: MohitAgent1212
+
+variables:
+  buildConfiguration: 'Release'
+  projectPath: 'src/productservice/productservice.csproj'
+
+steps:
+
+# ============================================================
+# 1. CHECKOUT
+# ============================================================
+- checkout: self
+  displayName: 'Checkout source code'
+
+
+# ============================================================
+# 2. INSTALL .NET 8 SDK
+# ============================================================
+- task: UseDotNet@2
+  displayName: 'Install .NET SDK'
+  inputs:
+    packageType: 'sdk'
+    version: '8.x'
+
+
+# ============================================================
+# 3. VERIFY .NET
+# ============================================================
+- script: |
+    dotnet --info
+  displayName: 'Verify .NET SDK'
+
+
+# ============================================================
+# 4. RESTORE
+# ============================================================
+- task: DotNetCoreCLI@2
+  displayName: 'Restore NuGet packages'
+  inputs:
+    command: 'restore'
+    projects: '$(projectPath)'
+
+
+# ============================================================
+# 5. BUILD
+# ============================================================
+- task: DotNetCoreCLI@2
+  displayName: 'Build Product API'
+  inputs:
+    command: 'build'
+    projects: '$(projectPath)'
+    arguments: '--configuration $(buildConfiguration) --no-restore'
+
+
+# ============================================================
+# 6. TEST
+# ============================================================
+- task: DotNetCoreCLI@2
+  displayName: 'Run automated tests'
+  inputs:
+    command: 'test'
+    projects: 'test/**/*.csproj'
+    arguments: '--configuration $(buildConfiguration) --no-restore'
+    publishTestResults: true
+
+
+# ============================================================
+# 7. PUBLISH + CREATE ZIP
+# ============================================================
+- task: DotNetCoreCLI@2
+  displayName: 'Publish Product API'
+  inputs:
+    command: 'publish'
+    projects: '$(projectPath)'
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/publish'
+    zipAfterPublish: true
+    modifyOutputPath: false
+
+
+# ============================================================
+# 8. DEPLOY ZIP TO AZURE APP SERVICE
+# ============================================================
+- task: AzureWebApp@1
+  displayName: 'Deploy Product API to Azure App Service'
+  inputs:
+    azureSubscription: 'MohitServiceConnection111'
+    appType: 'webApp'
+    appName: 'MyNewAPI'
+    package: '$(Build.ArtifactStagingDirectory)/publish/*.zip'
