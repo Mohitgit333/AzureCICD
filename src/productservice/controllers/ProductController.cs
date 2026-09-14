@@ -18,6 +18,7 @@ namespace productservice.Controllers
 
         // GET: api/product
        [HttpGet]
+       [Route("GetAll")]
 public IActionResult GetAll()
 {
     var products = new List<Product>
@@ -50,6 +51,14 @@ public IActionResult GetAll()
 
     return Ok(products);
 }
+
+[HttpGet]
+[Route("GetCurrentTime")]
+
+public IActionResult GetCurrentTime()
+        {
+            return Ok(DateTime.Now.ToString());
+        }
 
         //  // POST: api/product
         // [HttpPost]

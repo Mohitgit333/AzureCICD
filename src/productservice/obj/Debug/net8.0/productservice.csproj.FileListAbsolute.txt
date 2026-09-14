@@ -140,7 +140,6 @@ D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\src\productse
 D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\src\productservice\obj\Debug\net8.0\productservice.csproj.CoreCompileInputs.cache
 D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\src\productservice\obj\Debug\net8.0\productservice.MvcApplicationPartsAssemblyInfo.cs
 D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\src\productservice\obj\Debug\net8.0\productservice.MvcApplicationPartsAssemblyInfo.cache
-D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\src\productservice\obj\Debug\net8.0\productservice.sourcelink.json
 D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\src\productservice\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\src\productservice\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\Sandeep sir Azure Night Batch\Azure Sample Projects\ProductCICD\src\productservice\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
